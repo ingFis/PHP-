@@ -19,7 +19,7 @@
 
      classes: StudlyCaps
 
-     constante: caixa alta e separador de palavras: _
+     constante: caixa alta e separador de palavras: _ obs: vira estática
 
      métodos: camelCase
 
