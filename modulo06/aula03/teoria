@@ -1,0 +1,41 @@
+
+     CONCEITO DE DAO (DATA ACESS OBJECT)
+          -> classe para manipular o item 
+          -> classe para intermediar os dados do item com o DB
+
+               - criar o objeto a ser manipulado
+               - mandar o objeto para a classe intermediária 
+               - o intermediário faz a comunição com o banco de dados
+
+     CLASSE USUARIO - mexer com os dados de usuário através da classe
+          - id
+          - nome 
+          - email 
+
+          getId()
+          setId()
+
+          getNome()
+          setNome()
+
+          getEmail()
+          setEmail()
+
+     CLASSE USUARIODAO - CRUD - MANIPULAÇÃO NO BANCO DE DADOS - faz com o auxílio da classe USUARIO
+     add(USUARIO)
+
+     PASSO 1 PARA ADD USUÁRIO NOVO: 
+     - cria um objeto do tipo class
+
+     $usuario = new Usuario()
+     $usuario->setNome('Fulano')
+     $usuario->setEmail('fulano@gmail.com')
+
+     $usuarioDAO->add($usuario)
+
+
+
+
+
+
+
