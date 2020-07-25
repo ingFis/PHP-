@@ -1,5 +1,8 @@
 <?php
      require('config.php');
+     require_once('dao/UsuarioDaoMysql.php');
+
+     $usuarioDaoMysql = new UsuarioDaoMysql();
 
      $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
      $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);

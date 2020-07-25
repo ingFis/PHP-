@@ -1,5 +1,5 @@
 <?php
-     //CRIANDO UM DAO NA PRÁTICA (1/5)
+     //CRIANDO UM DAO NA PRÁTICA (1 e 2/5) 
      require('config.php');
      require('dao/UsuarioDaoMysql.php');
 

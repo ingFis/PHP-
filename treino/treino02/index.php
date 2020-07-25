@@ -1,9 +1,11 @@
 <?php
 
-     require('autoload.php');
+     $tipo = 'texto';
 
-     $mat = new Matematica\Basica();
-     echo $mat->somar(5,6);
-
+     switch($tipo){
+          case 'video': echo "VIDEO"; break;
+          case 'musica': echo "MUSICA"; break;
+          default: echo "Não especificado";
+     }
 
 ?>

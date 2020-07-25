@@ -1,13 +1,9 @@
 <?php
      require_once('config.php');
+     require_once('dao/UsuarioDaomysql.php');
 
-     $lista = [];
-
-     $sql = $pdo->query('SELECT * FROM usuarios');
-
-     if($sql->rowCount() > 1){
-          $lista = $sql->fetchAll(PDO::FETCH_ASSOC);
-     }
+     $usuarioDaoMysql = new UsuarioDaoMysql($pdo);
+     $lista = $usuarioDaoMysql->findAll();
 
 
 ?>
@@ -22,11 +18,11 @@
      </tr>
      <?php foreach($lista as $usuario):?>
      <tr>
-          <td><?=$usuario['nome']?></td>
-          <td><?=$usuario['email']?></td>
+          <td><?=$usuario->getNome()?></td>
+          <td><?=$usuario->getEmail()?></td>
           <td>
-               <a href="editar.php?id=<?=$usuario['id']?>">[editar]</a> |
-               <a href="deletar.php?id=<?=$usuario['id']?>" onclick="return confirm('Deseja realmente excluir?')">[deletar]</a> 
+               <a href="editar.php?id=<?=$usuario->getId()?>">[editar]</a> |
+               <a href="deletar.php?id=<?=$usuario->getId()?>" onclick="return confirm('Deseja realmente excluir?')">[deletar]</a> 
           </td>
      </tr>
      <?php endforeach;?>
