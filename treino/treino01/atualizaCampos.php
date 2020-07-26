@@ -1,6 +1,9 @@
 <?php
 
      require_once('config.php');
+     require_once('dao/UsuarioDaoMysql.php');
+
+     $usuarioDaoMysql = new UsuarioDaoMysql($pdo);
 
      $id = filter_input(INPUT_GET, 'id');
      $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
@@ -8,11 +11,11 @@
 
 
      if($nome && $email){
-          $sql = $pdo->prepare('UPDATE usuarios SET nome= :nome, email= :email WHERE id= :id');
-          $sql->bindValue(':nome', $nome);
-          $sql->bindValue(':email', $email);
-          $sql->bindValue(':id', $id);
-          $sql->execute();
+          $usuario = $usuarioDaoMysql->findById($id);
+
+          $usuario->setNome($nome);
+          $usuario->setEmail($email);
+          $usuarioDaoMysql->update($usuario);
 
           header('location: index.php');
           exit;
