@@ -13,3 +13,7 @@ Single Responsibility Principle - Classes devem ter apenas uma responsabilidade 
 Open/Closed Principle - Classes devem estar abertas a extensões e fechadas a modificações - aula 01
 
 Liskov Substitution Principle - Se uma classe recebe A e B extende A então essa classe deve receber classe B
+
+Interface Segregation Principle - Uma interface deve ter apenas métodos essenciais para a classe
+
+Dependency Inversion Principle - 

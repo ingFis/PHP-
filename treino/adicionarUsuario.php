@@ -5,7 +5,7 @@
      </label><br><br>
      <label>
           Email: <br>
-          <input type="email" name="email">
+          <input type="text" name="email">
      </label><br><br>
      <input type="submit" value="Adicionar">
 </form>
