@@ -18,6 +18,6 @@ imagefill($imagem, 0, 0, $cor);
 header("Content-Type: image/jpeg");
 
 //gera imagem 1º imagem, 2º onde será salvo(null - mostra na tela), 3º qualidade
-imagejpeg($imagem, 'image.jpg', 100);
+imagejpeg($imagem, null, 100);
 
 ?>
