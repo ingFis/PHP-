@@ -21,18 +21,23 @@ $info = getimagesize($arquivo);
 list($originalWidth, $originalHeight) = $info;
 
 //pegar proporção da imagem
-$ratio = $originalWidth / $originalHeight;
-$ratioDest = $maxWidth / $maxHeight;
+$ratio = $originalWidth / $originalHeight; //1,5
+$ratioDest = $maxWidth / $maxHeight; 
 
 $finalWidth = 0;
 $finalHeight = 0;
 
 if($ratioDest > $ratio){
-     $finalWidth = $maxHeight * $ratio;
-     $finalHeight = $maxHeight;
+     $finalWidth = $maxHeight * $ratio; //750
+     $finalHeight = $maxHeight; //500
+
+     //750/500 = 1,5
+
 }else{
-     $finalHeight = $maxWidth / $ratio;
-     $finalWidth = $maxWidth;
+     $finalHeight = $maxWidth / $ratio; //333
+     $finalWidth = $maxWidth; //500
+
+     //500/333 = 1,5
 }
 
 //4º cria a imagem
