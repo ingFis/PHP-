@@ -9,11 +9,18 @@ D - Dependency Inversion Principle(Princípio inversão de dependência)
 
 
 Single Responsibility Principle - Classes devem ter apenas uma responsabilidade - COESÃO
+Violação: Exemplo Criar os métodos da Dao junto com os get e set
 
 Open/Closed Principle - Classes devem estar abertas a extensões e fechadas a modificações - aula 01
+Violação: Exemplo folha de pagamento com vários tipos de remuneração
 
 Liskov Substitution Principle - Se uma classe recebe A e B extende A então essa classe deve receber classe B
+Violação: Não respeitar o retorno do método
 
 Interface Segregation Principle - Uma interface deve ter apenas métodos essenciais para a classe
+Violação: Exemplo colocar o método altitude na interface Aves
+Colocar em uma interface métodos que não necessariamente será utilizados por classes que implementarem
 
-Dependency Inversion Principle - 
+Dependency Inversion Principle - Quando se está fazendo uma injeção de dependência e essa dependência pode variar
+o ideal é criar uma interface
+Violação: Ter que trocar o tipo de injeção

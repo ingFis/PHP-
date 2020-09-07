@@ -1,5 +1,5 @@
 <?php
-     //ARRAYS
+     //ARRAYS - TIPO DE VARIÁVEL
 
      $ingredientes = 
      [
