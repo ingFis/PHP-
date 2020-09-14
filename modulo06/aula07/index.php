@@ -38,7 +38,7 @@ if($ratioDest > $ratio){
      $finalWidth = $maxWidth; //500
 
      //500/333 = 1,5
-}
+} 
 
 //4º cria a imagem
 $imagem = imagecreatetruecolor($finalWidth, $finalHeight);

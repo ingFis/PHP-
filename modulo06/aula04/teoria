@@ -19,7 +19,7 @@ Violação: Não respeitar o retorno do método
 
 Interface Segregation Principle - Uma interface deve ter apenas métodos essenciais para a classe
 Violação: Exemplo colocar o método altitude na interface Aves
-Colocar em uma interface métodos que não necessariamente será utilizados por classes que implementarem
+Colocar em uma interface métodos que não necessariamente serão utilizados por classes que implementarem
 
 Dependency Inversion Principle - Quando se está fazendo uma injeção de dependência e essa dependência pode variar
 o ideal é criar uma interface

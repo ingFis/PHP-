@@ -1,18 +1,9 @@
-MVC
+M - model
+V - view
+C - controller - coração do sistema
 
-M -> MODEL
-V -> VIEW
-C -> CONTROLLER
-
-o primeiro é o index - arquivo inicial/sobre
-site.com.br/sobre
-
-- O usuário requisita a url site.com.br/sobre
-- O mvc vai verificar se esta ROTA está estabelecida 
-     obs: ROTA é a direção que o sistema vai baseado na requisição
-- Se a ROTA estiver estabelecida o mvc vai mandar a requisição para a CONTROLLER     
-     CONTROLLER - coração do sistema - recebe a requisição
-     -- Carregar um VIEW - parte visual do sistema
-          ou 
-     -- Chamar um MODEL - direcionada a alguma tabela do usuário
-
+- o usuário requisita a url site.com.br/sobre
+- o mvc verifica se a ROTA está estabelecida. Rota é o caminho para onde o site vai 
+- se estiver: o mvc vai mandar a requisição para o CONTROLLER da rota.
+-- Carregar um VIEW(parte visual)
+-- Chamar um MODEL(classe relacionada ao uma tabela do db)
