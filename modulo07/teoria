@@ -7,3 +7,11 @@ C - controller - coração do sistema
 - se estiver: o mvc vai mandar a requisição para o CONTROLLER da rota.
 -- Carregar um VIEW(parte visual)
 -- Chamar um MODEL(classe relacionada ao uma tabela do db)
+
+ORM - Mapeamento de objeto relacional
+Hydrahon
+
+tabelas no DB - Classes
+Registros - Instâncias
+
+Arquivos CSS, Imagens, etc - devem ficar na pasta public, única acessível externamente
