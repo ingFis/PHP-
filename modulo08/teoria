@@ -1,0 +1,56 @@
+requisição -> servidor -> processa informações -> retorna
+
+Cliente: navegador, qualquer coisa que tenha acesso a internet
+servidor: recebe a requisição -> processa -> retorna resultado
+
+API(Application Programming Interface) - sistema sem a parte gráfica - só retorna informações
+
+Estrutura de uma API
+
+2 processos
+
+Endpoint: URL requisitada
+
+requisição
+     - Igual o acesso a um site normal
+     - GET, POST, PUT, DELETE, OPTIONS
+     - Cabeçalhos
+
+retorno
+     - texto puro
+     - Padrões de formatação: XML, json
+
+
+DevsNotes:(Sistema de anotações simples)
+
+     O que o sistema precisa fazer?
+          - Listar as anotações
+          - Pegar informações de uma anotação
+          - Inserir uma anotação
+          - Atualizar uma anotação
+          - Deletar uma anotação
+
+     Qual a estrutura de dados?
+          - Local para armazenar anotações
+          -- id
+          -- title
+          -- body
+
+     Quais os endpoints?
+     - (METODO)/url(PARÂMETROS)              Estrutural
+     -- (GET)/api/notes                      /api/getall.php
+     -- (GET)/api/note/123                   /api/get.php?id=123
+     -- (POST)/api/note(title, body)         /api/insert.php (title, body)  
+     -- (PUT)/api/note/123(title, body)      /api/update.php (id, title, body)  
+     -- (DELETE)/api/note/123                /api/delete.php (id)
+
+
+obs:
+
+Access to XMLHttpRequest at 'http://localhost/PHP-/PHP-/modulo08/DEVSNOTES/api/' 
+from origin 'https://resttesttest.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin'
+header is present on the requested resource.
+
+proteção de requisições http - um site não pode fazer requisição para outro site
+sem q esse outro site tenha dado permissão
+
